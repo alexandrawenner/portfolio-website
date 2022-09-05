@@ -11,7 +11,7 @@
 }
 
 :root {
-    --color-bg: yellow;
+    --color-bg: rgb(97, 97, 97);
     --color-bg-variant: purple;
     --color-primary: rgb(138, 237, 255);
     --color-primary-variant: grey;
@@ -36,7 +36,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
-    color: var(--color-white0);
+    color: var(--color-white);
     line-height: 1.7;
     background-image: url(../src/images/beehive.jpeg);
     /* background-repeat: no-repeat;
@@ -61,6 +61,7 @@ h1 {
 
 section {
     margin-top: 8rem;
+    height: 100vh;
 }
 
 section > h2, section > h5 {
