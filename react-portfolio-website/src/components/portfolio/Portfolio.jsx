@@ -1,48 +1,64 @@
 import React from 'react'
 import './portfolio.css'
+import IMG1 from '../../images/portfolio1.png'
+import IMG2 from '../../images/portfolio2.png'
+import IMG3 from '../../images/portfolio3.png'
+import IMG4 from '../../images/portfolio4.png'
 
-const Portfolio = () => {
+const data = [
+  {
+    id: 1,
+    image: IMG4,
+    title: 'Broadway Hub',
+    github: 'https://github.com/alexandrawenner/Capstone-Project',
+    demo: 'https://www.linkedin.com/posts/alexandra-wenner_softwareengineering-capstoneproject-flatiron-activity-6969409376784654336-Q8Ft?utm_source=share&utm_medium=member_desktop'
+  },
+  {
+    id: 2,
+    image: IMG3,
+    title: 'Nu Vibration',
+    github: 'https://github.com/alexandrawenner/nu-vibration-app',
+    demo: 'https://www.linkedin.com/posts/alexandra-wenner_softwareengineering-capstoneproject-flatiron-activity-6969409376784654336-Q8Ft?utm_source=share&utm_medium=member_desktop'
+  },
+  {
+    id: 3,
+    image: IMG2,
+    title: 'A24 Flix',
+    github: 'https://github.com/alexandrawenner/my-app-frontend',
+    demo: 'https://www.linkedin.com/posts/alexandra-wenner_ruby-fullstackdevelopment-flatiron-activity-6960009491044016128-6f9G?utm_source=share&utm_medium=member_desktop'
+  },
+  {
+    id: 4,
+    image: IMG1,
+    title: 'Task Daily',
+    github: 'https://github.com/alexandrawenner/productivity-app-attempt2',
+    demo: 'https://www.linkedin.com/posts/alexandra-wenner_react-project-flatiron-activity-6960007593662500865-eV1y?utm_source=share&utm_medium=member_desktop'
+  },
+]
+
+const Portfolio = () => {  
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
       <div className='container portfolio__container'>
-        <article className='portfolio__item'>
-          <div className='portfolio_item-image'>
-
-          </div>
-          <h3>Broadway Musical Hub</h3>
-          <a href="https://github.com/alexandrawenner" className='btn' target='_blank'>Github</a>
-          <a href="https://www.linkedin.com/posts/alexandra-wenner_softwareengineering-capstoneproject-flatiron-activity-6969409376784654336-Q8Ft?utm_source=share&utm_medium=member_desktop" className='btn' target='_blank'>Live Demo</a>
-        </article>
-
-        <article className='portfolio__item'>
-          <div className='portfolio_item-image'>
-
-          </div>
-          <h3>Spotify Clone</h3>
-          <a href="https://github.com/alexandrawenner" className='btn' target='_blank'>Github</a>
-          <a href="https://www.linkedin.com/posts/alexandra-wenner_softwareengineering-capstoneproject-flatiron-activity-6969409376784654336-Q8Ft?utm_source=share&utm_medium=member_desktop" className='btn' target='_blank'>Live Demo</a>
-        </article>
-
-        <article className='portfolio__item'>
-          <div className='portfolio_item-image'>
-
-          </div>
-          <h3>A24 Flix</h3>
-          <a href="https://github.com/alexandrawenner" className='btn' target='_blank'>Github</a>
-          <a href="https://www.linkedin.com/posts/alexandra-wenner_ruby-fullstackdevelopment-flatiron-activity-6960009491044016128-6f9G?utm_source=share&utm_medium=member_desktop" className='btn' target='_blank'>Live Demo</a>
-        </article>
-
-        <article className='portfolio__item'>
-          <div className='portfolio_item-image'>
-
-          </div>
-          <h3>Task App</h3>
-          <a href="https://github.com/alexandrawenner" className='btn' target='_blank'>Github</a>
-          <a href="https://www.linkedin.com/posts/alexandra-wenner_react-project-flatiron-activity-6960007593662500865-eV1y?utm_source=share&utm_medium=member_desktop" className='btn' target='_blank'>Live Demo</a>
-        </article>
+        {
+          data.map(({id, image, title, github, demo}) => {
+            return(
+              <article className='portfolio__item'>
+                <div className='portfolio__item-image'>
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className='portfolio__item-cta'>
+                  <a href={github} className='btn' target='_blank'>Github</a>
+                  <a href={demo} className='btn' target='_blank'>Live Demo</a>
+                </div>
+              </article>
+            )
+          })
+        }
       </div>
     </section>
   )
