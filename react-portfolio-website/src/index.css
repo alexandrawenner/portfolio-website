@@ -12,11 +12,11 @@
 
 :root {
     --color-bg: rgb(97, 97, 97);
-    --color-bg-variant: purple;
+    --color-bg-variant: rgb(88, 0, 88);
     --color-primary: rgb(138, 237, 255);
-    --color-primary-variant: grey;
+    --color-primary-variant: rgb(185, 185, 185);
     --color-white: white;
-    --color-light: orange;
+    --color-light: rgb(133, 71, 255);
 
     --transition: all 400ms ease;
 
@@ -38,7 +38,9 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/images/beehive.jpeg);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,99,121,0.16327901146131807) 76%, rgba(0,212,255,1) 100%);
+    /* background-image: url(../src/images/beehive.jpeg); */
     /* background-repeat: no-repeat;
     background-size: cover; */
 }
@@ -66,11 +68,11 @@ section {
 
 section > h2, section > h5 {
     text-align: center;
-    color: var(--color-light);
+    color: var(--color-white);
 }
 
 section > h2 {
-    color: var(--color-primary);
+    color: var(--color-bg-variant);
     margin-bottom: 3rem;
 }
 

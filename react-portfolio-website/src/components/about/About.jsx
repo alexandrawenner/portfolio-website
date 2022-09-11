@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../images/me2.jpeg'
+import ME from '../../images/me2.JPG'
 import {FaAward} from 'react-icons/fa'
 import {VscFolderLibrary} from 'react-icons/vsc'
 
@@ -39,7 +39,7 @@ const About = () => {
         </div>
 
         <p>
-          I am a Software Engineer with a passion for Design!
+          I am a Software Engineer with a passion for Design! I believe the design process ties everything together in the end. While I am a Full-stack Developer, that is why I love the frontend. I can create complex functions and style them to ensure they work as a pair.
         </p>
 
         <a href='#contact' className='btn btn-primary'>Let's Talk</a>
