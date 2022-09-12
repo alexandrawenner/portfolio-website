@@ -45,11 +45,11 @@
     transition: var(--transition);
 }
 
-.about__card:hover {
+/* .about__card:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: pointer;
-}
+} */
 
 .about__icon {
     color: var(--color-primary);
@@ -59,6 +59,7 @@
 
 .about__card h5 {
     font-size: 0.95rem;
+    color: var(--color-primary-variant);
 }
 
 .about__card small {
@@ -66,9 +67,21 @@
     color: var(--color-primary-variant);
 }
 
+.blog__card {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
 .about__content p {
     margin: 2rem 0 2.6rem;
     color: var(--color-bg-variant);
+}
+
+h5.blog__text {
+    color: var(--color-primary-variant);
 }
 
 /*==============MEDIA QUERIES (MEDIUM DEVICES TABLETS)==============*/

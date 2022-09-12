@@ -18,7 +18,7 @@ const data = [
     image: IMG3,
     title: 'Nu Vibration',
     github: 'https://github.com/alexandrawenner/nu-vibration-app',
-    demo: 'https://www.linkedin.com/posts/alexandra-wenner_softwareengineering-capstoneproject-flatiron-activity-6969409376784654336-Q8Ft?utm_source=share&utm_medium=member_desktop'
+    demo: 'https://www.linkedin.com/posts/victorzarour_softwareengineer-developer-reactjs-activity-6961407246501089280-ofIK?utm_source=share&utm_medium=member_desktop'
   },
   {
     id: 3,
