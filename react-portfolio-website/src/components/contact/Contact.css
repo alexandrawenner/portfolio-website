@@ -2,7 +2,8 @@
     width: 58%;
     display: grid;
     grid-template-columns: 30% 58%;
-    gap: 12%
+    gap: 12rem;
+    margin-top: 20rem;
 }
 
 .contact__options {
@@ -20,10 +21,7 @@
     transition: var(--transition);
 }
 
-/* .contact__option:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-} */
+
 ::placeholder {
     color: white;
 }
