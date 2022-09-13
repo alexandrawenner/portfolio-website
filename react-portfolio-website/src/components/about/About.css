@@ -1,3 +1,17 @@
+#about {
+    background-color: rgba(255, 255, 255, 0.4);
+    height: auto;
+}
+
+.about__header {
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.about__header h2 {
+    color: var(--color-bg-variant);
+}
+
 .about__container {
     display: right;
     display: grid;
@@ -44,12 +58,6 @@
     text-align: center;
     transition: var(--transition);
 }
-
-/* .about__card:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: pointer;
-} */
 
 .about__icon {
     color: var(--color-primary);
@@ -100,6 +108,11 @@ h5.blog__text {
     .about__content p {
         margin: 1rem 0 1.5rem;
     }
+
+    #about {
+        height: auto;
+    }
+
 }
 
 /*==============MEDIA QUERIES (SMALL DEVICES PHONES)==============*/
@@ -107,11 +120,11 @@ h5.blog__text {
 @media screen and (max-width: 600px) {
     .about__me {
         width: 65%;
-        margin: 0 auto 3rem;
+        margin: 3rem auto 5rem;
     }
 
     .about__cards{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
@@ -121,5 +134,13 @@ h5.blog__text {
 
     .about__content p {
         margin: 1.5rem 0;
+    }
+    
+   /* .blog__card {
+    margin: 3rem;
+   } */
+
+    #about {
+        height: auto;
     }
 }

@@ -1,3 +1,8 @@
+#experience {
+    background-color: rgb(124, 124, 124) transparent;
+    height: auto;
+}
+
 .experience__container {
     display: grid;
     grid-template-columns:  1fr 1fr;
@@ -9,13 +14,6 @@
     padding: 2.4rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
-    transition: var(--transition);
-}
-
-.experience__container > div:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
 }
 
 .experience__container > div h3 {
@@ -38,6 +36,15 @@
 .experience__details-icon {
     margin-top: 6px;
     color: var(--color-primary);
+}
+
+.exp__header {
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.exp__header h2 {
+    color: var(--color-bg-variant);
 }
 
 small.text-light {
@@ -68,10 +75,11 @@ small.text-light {
 @media screen and (max-width: 600px) {
     .experience__container {
         gap: 1rem;
+        
        }
     
        .experience__container > div {
         width: 100%;
-        padding: 2rem 1 rem;
+        padding: 2rem 1rem;
        }
 }

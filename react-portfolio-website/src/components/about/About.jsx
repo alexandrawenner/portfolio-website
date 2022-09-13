@@ -8,8 +8,10 @@ import { BsReverseLayoutTextWindowReverse } from 'react-icons/bs'
 const About = () => {
   return (
    <section id='about'>
-    <h5>Get To Know</h5>
-    <h2>About Me</h2>
+      <h5>Get To Know</h5>
+      <h2>About Me</h2>
+    {/* <div className='about__header'>
+    </div> */}
 
     <div className='container about__container'>
       <div className='about__me'>
